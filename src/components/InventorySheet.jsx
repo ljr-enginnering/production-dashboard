@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { database } from '../services/database';
+import { supabaseDatabase as database } from '../services/supabaseService';
 
 const InventorySheet = ({ onClose, onUpdate }) => {
     const [rows, setRows] = useState([]);

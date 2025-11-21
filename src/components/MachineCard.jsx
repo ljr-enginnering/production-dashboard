@@ -1,5 +1,5 @@
 import React from 'react';
-import { database } from '../services/database';
+import { supabaseDatabase as database } from '../services/supabaseService';
 
 const StatusBadge = ({ status }) => {
     const colors = {

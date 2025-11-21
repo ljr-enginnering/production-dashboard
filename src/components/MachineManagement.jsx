@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { database } from '../services/database';
+import { supabaseDatabase as database } from '../services/supabaseService';
 
 const MachineManagement = ({ machines, onUpdate, onClose }) => {
     const [editingId, setEditingId] = useState(null);

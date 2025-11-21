@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { database } from '../services/database';
+import { supabaseDatabase as database } from '../services/supabaseService';
 
 const MachineDetailModal = ({ machine, onClose, onUpdate }) => {
     const [formData, setFormData] = useState({ ...machine });

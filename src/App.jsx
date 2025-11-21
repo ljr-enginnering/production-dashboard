@@ -3,7 +3,7 @@ import MachineCard from './components/MachineCard'
 import MachineManagement from './components/MachineManagement'
 import InventorySheet from './components/InventorySheet'
 import MachineDetailModal from './components/MachineDetailModal'
-import { database } from './services/database';
+import { supabaseDatabase as database } from './services/supabaseService';
 
 const BUILDINGS = ['B동', 'D동', 'MORI동', 'WIZ동'];
 
